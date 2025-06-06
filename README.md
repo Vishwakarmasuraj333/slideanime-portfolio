@@ -53,4 +53,3 @@ Feel free to connect with me:
 1. Clone this repository:
    ```bash
    git clone https://github.com/your-username/suraj-portfolio.git
-thankyou.....!
