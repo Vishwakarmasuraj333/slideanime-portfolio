@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SURAJ_PORTFOLIO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .slide-in {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .slide-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @keyframes blink {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: #4EA9F6; }
+    }
+    #typewriter {
+      animation: blink 1s step-end infinite;
+    }
+  </style>
+</head>
+<body class="bg-[#071B2F] text-[#D1D9E6] min-h-screen">
+
+  <!-- Navbar -->
+  <header class="bg-[#0D1E2F] sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center text-sm font-semibold">
+      <div class="text-white font-bold text-xl">SURAJ.</div>
+      <ul class="flex space-x-6 text-[#D1D9E6]">
+        <li><a href="#home" class="text-[#4EA9F6] hover:text-[#6EB7FF]">Home</a></li>
+        <li><a href="#about" class="hover:text-[#4EA9F6]">About</a></li>
+        <li><a href="#journey" class="hover:text-[#4EA9F6]">Education</a></li>
+        <li><a href="#skills" class="hover:text-[#4EA9F6]">Skills</a></li>
+        <li><a href="#contact" class="hover:text-[#4EA9F6]">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto p-4 space-y-16">
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-[#0D1E2F] rounded-xl p-8 flex flex-col md:flex-row items-center justify-between">
+      <div class="max-w-lg space-y-4">
+        <h1 class="text-4xl font-extrabold text-white">Hi, I'm SURAJ VISHWAKARMA</h1>
+        <h2 class="text-xl font-semibold text-[#4EA9F6] h-8">
+          <span id="typewriter" class="border-r-2 border-[#4EA9F6] pr-1"></span>
+        </h2>
+        <p class="text-[#B0B9C9]">I specialize in crafting beautiful, user-friendly websites and web apps using modern technologies like HTML, CSS, JavaScript, and frameworks like React.</p>
+        <div class="flex space-x-4 mt-4">
+          <button class="bg-[#4EA9F6] text-white px-5 py-2 rounded-md hover:bg-[#6EB7FF]">Hire Me</button>
+          <button class="bg-[#1E3A5F] text-[#4EA9F6] px-5 py-2 rounded-md hover:bg-[#2A4E8C]">Let's Talk</button>
+        </div>
+        <div class="flex space-x-6 mt-6 text-[#4EA9F6] text-lg">
+          <a href="" class="hover:text-[#6EB7FF]"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/people/Vishwakarma-Suraj/pfbid0PWXUunyzKb2pXrJ2o54sg4WRbwMpsPMoWghMDCFu9xmGZkpZPiMctg6XgPZdALgAl/?rdid=pMU98CIuXSKOVLAW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16a5Gdy654%2F" class="hover:text-[#6EB7FF]"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-[#6EB7FF]"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Vishwakarmasuraj333" class="hover:text-[#6EB7FF]"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/surajvishwakarma_bittu/?igsh=NXlyNHBrbjNvbGJ0&utm_source=ig_contact_invite#" class="hover:text-[#6EB7FF]"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="hidden md:block w-48 h-64 relative slide-in">
+        <img src="c:\Users\DK\OneDrive\Desktop\msm.jpeg" alt="Portrait" class="w-full h-full object-cover rounded-lg" />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-[#0D1E2F] rounded-xl p-8 text-center space-y-6 slide-in">
+      <h3 class="text-2xl font-bold text-white">About <span class="text-[#4EA9F6]">Me</span></h3>
+      <div class="flex justify-center">
+        <div class="w-28 h-28 rounded-full border-4 border-[#4EA9F6] overflow-hidden">
+          <img src="c:\Users\DK\OneDrive\Desktop\m.jpg" alt="Profile" class="object-cover w-full h-full" />
+        </div>
+      </div>
+      <h4 class="text-[#4EA9F6] font-semibold text-lg">Frontend Developer</h4>
+      <p class="text-[#B0B9C9] max-w-2xl mx-auto text-sm leading-relaxed">
+        Passionate about UI/UX and building responsive web interfaces. I create websites that are not only functional but also provide a great user experience.
+      </p>
+      <button class="bg-[#4EA9F6] text-white px-6 py-2 rounded-md hover:bg-[#6EB7FF]">Read More</button>
+    </section>
+
+    <!-- Education & Experience -->
+    <section id="journey" class="bg-[#0D1E2F] rounded-xl p-6 flex flex-col items-center slide-in">
+      <h3 class="text-2xl font-bold text-white mb-6 text-center">My <span class="text-[#4EA9F6]">Journey</span></h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl w-full">
+        <!-- Education -->
+        <div>
+          <h4 class="text-sm font-semibold text-[#4EA9F6] mb-3">Education</h4>
+          <div class="space-y-3 text-xs text-[#B0B9C9]">
+            <div class="border border-[#4EA9F6] rounded-md p-3">
+              <p class="font-semibold text-white text-[11px] mb-1">Master Degree - University</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Experience -->
+        <div>
+          <h4 class="text-sm font-semibold text-[#4EA9F6] mb-3">Experience</h4>
+          <div class="space-y-3 text-xs text-[#B0B9C9]">
+            <div class="border border-[#4EA9F6] rounded-md p-3">
+              <p class="font-semibold text-white text-[11px] mb-1">Web Developer - Company</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="bg-[#0D1E2F] rounded-xl p-6 flex flex-col items-center slide-in">
+      <h3 class="text-2xl font-bold text-white mb-6 text-center">My <span class="text-[#4EA9F6]">Skills</span></h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl w-full">
+        <!-- Coding -->
+        <div>
+          <h4 class="text-xs font-semibold text-[#B0B9C9] mb-3">Coding Skills</h4>
+          <div class="space-y-3">
+            <div><span class="text-white text-sm">HTML</span><div class="bg-[#1E3A5F] rounded-full h-2"><div class="bg-[#4EA9F6] h-2 rounded-full" style="width: 90%"></div></div></div>
+            <div><span class="text-white text-sm">CSS</span><div class="bg-[#1E3A5F] rounded-full h-2"><div class="bg-[#4EA9F6] h-2 rounded-full" style="width: 85%"></div></div></div>
+            <div><span class="text-white text-sm">JavaScript</span><div class="bg-[#1E3A5F] rounded-full h-2"><div class="bg-[#4EA9F6] h-2 rounded-full" style="width: 80%"></div></div></div>
+          </div>
+        </div>
+        <!-- Professional -->
+        <div>
+          <h4 class="text-xs font-semibold text-[#B0B9C9] mb-3">Professional Skills</h4>
+          <div class="space-y-3">
+            <div><span class="text-white text-sm">Web Design</span><div class="bg-[#1E3A5F] rounded-full h-2"><div class="bg-[#4EA9F6] h-2 rounded-full" style="width: 90%"></div></div></div>
+            <div><span class="text-white text-sm">Graphic Design</span><div class="bg-[#1E3A5F] rounded-full h-2"><div class="bg-[#4EA9F6] h-2 rounded-full" style="width: 75%"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-[#0D1E2F] rounded-xl p-6 flex flex-col items-center slide-in">
+      <h3 class="text-2xl font-bold text-white mb-6 text-center">Contact <span class="text-[#4EA9F6]">Me</span></h3>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl w-full text-sm">
+        <input type="text" placeholder="Full Name" class="bg-[#071B2F] border border-[#4EA9F6] rounded px-3 py-2" />
+        <input type="email" placeholder="Email Address" class="bg-[#071B2F] border border-[#4EA9F6] rounded px-3 py-2" />
+        <input type="text" placeholder="Mobile Number" class="bg-[#071B2F] border border-[#4EA9F6] rounded px-3 py-2" />
+        <input type="text" placeholder="Subject" class="bg-[#071B2F] border border-[#4EA9F6] rounded px-3 py-2" />
+        <textarea rows="5" placeholder="Your Message" class="md:col-span-2 bg-[#071B2F] border border-[#4EA9F6] rounded px-3 py-2 resize-none"></textarea>
+        <button type="submit" class="md:col-span-2 bg-[#4EA9F6] text-white py-2 rounded hover:bg-[#6EB7FF] font-semibold">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Team & Profiles Section with Dark Theme and Animation -->
+<section class="max-w-7xl mx-auto px-4 py-16">
+  <h2 class="text-center text-3xl font-bold text-blue-400 mb-10 animate-fade-in">Team & Profiles</h2>
+  <div class="flex flex-wrap justify-center gap-6">
+
+    <!-- Example Card -->
+    <div class="bg-gray-900 text-gray-200 rounded-lg shadow-lg w-64 p-4 text-center hover:shadow-xl transition transform hover:-translate-y-2 duration-300 animate-slide-up">
+      <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=500&auto=format&fit=crop&q=60" class="rounded-lg h-40 object-cover mb-3" alt="">
+      <p class="font-semibold">Planning & SCope.</p>
+      <p class="text-sm text-gray-400">the PLanned and build & testing or bugs error and programming.</p>
+    </div>
+
+    <!-- Repeat for each team member -->
+    <div class="bg-gray-900 text-gray-200 rounded-lg shadow-lg w-64 p-4 text-center hover:shadow-xl transition transform hover:-translate-y-2 duration-300 animate-slide-up">
+      <img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?q=80" class="rounded-lg h-40 object-cover mb-3" alt="">
+      <p class="font-semibold">Software Enthusiast</p>
+      <p class="text-sm text-gray-400">Loves building scalable systems.</p>
+    </div>
+
+    <!-- Example Card -->
+    <div class="bg-gray-900 text-gray-200 rounded-lg shadow-lg w-64 p-4 text-center hover:shadow-xl transition transform hover:-translate-y-2 duration-300 animate-slide-up">
+      <img src="https://media.istockphoto.com/id/2156388140/photo/hispanic-latin-american-couple-software-engineer-developer-use-computer-work-on-program.jpg?s=1024x1024&w=is&k=20&c=QlUcBBknmvx74UAKeMruYo2UmGWyar1rDUs-7oSX0jo=" class="rounded-lg h-40 object-cover mb-3" alt="">
+      <p class="font-semibold">front-end developer</p>
+      <p class="text-sm text-gray-400">front-end systems.</p>
+    </div>
+
+    <!-- Repeat for each team member -->
+    <div class="bg-gray-900 text-gray-200 rounded-lg shadow-lg w-64 p-4 text-center hover:shadow-xl transition transform hover:-translate-y-2 duration-300 animate-slide-up">
+      <img src="https://media.istockphoto.com/id/1475085792/photo/co-workers-gathered-around-a-desk-in-a-office-cubicle-working-and-discussing-together-using-a.jpg?s=1024x1024&w=is&k=20&c=ppV6TfKjbF4rmeEMSLarkenbLMskvgmnlY7T8snYvEs=" class="rounded-lg h-40 object-cover mb-3" alt="">
+      <p class="font-semibold">backend developer</p>
+      <p class="text-sm text-gray-400"> built structure software & web developer Loves building scalable systems.</p>
+    </div>
+
+
+    <!-- Example Card -->
+    <div class="bg-gray-900 text-gray-200 rounded-lg shadow-lg w-64 p-4 text-center hover:shadow-xl transition transform hover:-translate-y-2 duration-300 animate-slide-up">
+      <img src="https://media.istockphoto.com/id/1678076301/photo/software-programmer-or-coder-woman.jpg?s=612x612&w=is&k=20&c=T4sQmo60TzKar_NUWUph1yGX14zyNkWQJIqgYBr-pX0=" class="rounded-lg h-40 object-cover mb-3" alt="">
+      <p class="font-semibold">testing</p>
+      <p class="text-sm text-gray-400">Passionate about UI/UX and backend systems.</p>
+    </div>
+
+    <!-- Repeat for each team member -->
+    <div class="bg-gray-900 text-gray-200 rounded-lg shadow-lg w-64 p-4 text-center hover:shadow-xl transition transform hover:-translate-y-2 duration-300 animate-slide-up">
+      <img src="https://media.istockphoto.com/id/2156387160/photo/hispanic-latin-american-couple-software-engineer-developer-use-computer-work-on-program.jpg?s=1024x1024&w=is&k=20&c=tEK19eAzzGxgBSnK7XSwjOR6JdnLqh4tni-mNqdYm7M=" class="rounded-lg h-40 object-cover mb-3" alt="">
+      <p class="font-semibold">development</p>
+      <p class="text-sm text-gray-400">destroyed the Loves building scalable systems.</p>
+    </div>
+
+
+    <!-- Example Card -->
+    <div class="bg-gray-900 text-gray-200 rounded-lg shadow-lg w-64 p-4 text-center hover:shadow-xl transition transform hover:-translate-y-2 duration-300 animate-slide-up">
+      <img src="https://media.istockphoto.com/id/2085507701/photo/close-up-hand-of-asian-prompt-engineer-developer-coding-app-with-software-data-sitting-in.jpg?s=612x612&w=is&k=20&c=2nVM2W3EWsiGEFOuSvLVTmfMzzTsz3tg7QGw0Bm2Ptg=" class="rounded-lg h-40 object-cover mb-3" alt="">
+      <p class="font-semibold">maintance</p>
+      <p class="text-sm text-gray-400">the software and tha maintancs planning..</p>
+    </div>
+
+    <!-- Repeat for each team member -->
+    <div class="bg-gray-900 text-gray-200 rounded-lg shadow-lg w-64 p-4 text-center hover:shadow-xl transition transform hover:-translate-y-2 duration-300 animate-slide-up">
+      <img src="https://media.istockphoto.com/id/1306526412/photo/men-working-in-laptop-at-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=51q3PNoucId-t3_n-xfnJy0k-MuAAelkLJ4T-34EWMA=" class="rounded-lg h-40 object-cover mb-3" alt="">
+      <p class="font-semibold">planning SDLC & deployment</p>
+      <p class="text-sm text-gray-400"> the SDLC softare web application Loves building scalable systems.</p>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- Login & Contact Section in Dark Mode -->
+<section id="contact" class="max-w-5xl mx-auto px-4 py-16 bg-gray-800 rounded-2xl flex flex-wrap shadow-xl text-white animate-slide-up">
+  <!-- Login -->
+  <div class="w-full md:w-1/2 p-6">
+    <h2 class="text-3xl font-bold text-blue-400 mb-6">Login</h2>
+    <form class="space-y-4">
+      <input type="email" placeholder="Email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+      <input type="password" placeholder="Password" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+      <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">Log In</button>
+    </form>
+  </div>
+
+  <!-- Contact -->
+  <div class="w-full md:w-1/2 p-6 bg-gray-700 rounded-xl">
+    <h2 class="text-3xl font-bold text-blue-400 mb-6">Contact Us</h2>
+    <form class="space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+      <input type="email" placeholder="Your Email" class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+      <textarea rows="4" placeholder="Your Message" class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+      <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- TailwindCSS Animations -->
+<style>
+  @keyframes slide-up {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out;
+  }
+  .animate-fade-in {
+    animation: fade-in 1s ease-out;
+  }
+</style>
+
+  <!-- Footer -->
+  <footer class="text-center text-xs text-[#B0B9C9] py-6">
+    © 2025 SURAJ_PORTFOLIO. All rights reserved.
+  </footer>
+
+  <script>
+    // Typewriter effect
+    const phrases = ["I'm a Frontend Developer", "I'm a Software Engineer", "I'm a Problem Solver", "I'm a Tech Enthusiast"];
+    const el = document.getElementById("typewriter");
+    let currentPhrase = 0;
+    let currentChar = 0;
+    let isDeleting = false;
+
+    function type() {
+      const currentText = phrases[currentPhrase];
+      const typed = currentText.substring(0, currentChar);
+      el.textContent = typed;
+
+      if (!isDeleting) {
+        if (currentChar < currentText.length) {
+          currentChar++;
+          setTimeout(type, 100);
+        } else {
+          isDeleting = true;
+          setTimeout(type, 1500);
+        }
+      } else {
+        if (currentChar > 0) {
+          currentChar--;
+          setTimeout(type, 50);
+        } else {
+          isDeleting = false;
+          currentPhrase = (currentPhrase + 1) % phrases.length;
+          setTimeout(type, 500);
+        }
+      }
+    }
+
+    // Reveal animations on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.slide-in').forEach(el => observer.observe(el));
+
+    document.addEventListener("DOMContentLoaded", type);
+  </script>
+</body>
+</html>
